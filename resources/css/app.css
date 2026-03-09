@@ -9,3 +9,18 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+@utility no-scrollbar {
+    @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
+@layer utilities {
+    @keyframes scroll {
+        from {translate: 0;}
+        to {translate:-33%;} 
+    }
+
+    .animate-scroll {
+        animation: scroll 10s infinite linear;
+    }   
+}
