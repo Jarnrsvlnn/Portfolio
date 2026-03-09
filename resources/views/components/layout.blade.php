@@ -42,8 +42,8 @@
             </ul>
         </nav>
         
-        <main class="flex flex-col justify-center sm:px-40 w-full min-w-80 sm:min-w-100 gap-y-10">
+        <main class="flex flex-col justify-center sm:px-40 w-full min-w-80 sm:min-w-100 gap-y-20">
             {{ $slot }}
-        </main> 
+        </main>  
     </body>
 </html> 
