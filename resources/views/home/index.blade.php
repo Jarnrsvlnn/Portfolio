@@ -3,7 +3,7 @@
     {{-- ABOUT SECTION --}}
     <div class="border-2 border-[rgb(120,120,120)] rounded-xl flex flex-col gap-5 px-4 py-5">
         {{-- UPPER CONTAINER --}}
-        <div class="border">
+        <div>
             <x-title-text>John Robert Sevillena</x-title-text>
 
             <div class="flex gap-1">
@@ -13,11 +13,9 @@
         </div>
 
         {{-- LOWER CONTAINER --}}
-        <div class="border">
-            <x-description-text>
-                Hi! I'm a 20-years-old student from the Philippines, I mainly do <span class="text-yellow-300">web development</span>. I also do <span class="text-yellow-300">video editing</span> and <span class="text-yellow-300">UI/UX designing</span> as creative hobbies.
-            </x-description-text>
-        </div>
+        <x-description-text>
+            Hi! I'm a 20-years-old student from the Philippines, I mainly do <span class="text-yellow-300">web development</span>. I also do <span class="text-yellow-300">video editing</span> and <span class="text-yellow-300">UI/UX designing</span> as creative hobbies.
+        </x-description-text>
     </div>
 
     {{-- TECH STACK --}}

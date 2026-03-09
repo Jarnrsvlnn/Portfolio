@@ -24,3 +24,59 @@
         animation: scroll 10s infinite linear;
     }   
 }
+.liquid-glass {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.02) 0%,
+        rgba(255, 255, 255, 0.02) 50%,
+        rgba(255, 255, 255, 0.07) 100%
+    );
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.45),
+        0 2px 8px rgba(0, 0, 0, 0.3);   
+    position: relative;
+    isolation: isolate;
+}
+  
+/* Faded edge glow — bottom-right corner */
+.liquid-glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: linear-gradient(
+        315deg,
+        rgba(255, 255, 255, 0.55) 0%,     /* bright bottom-right corner */
+        rgba(255, 255, 255, 0.2)  20%,    /* fades along bottom edge */
+        rgba(255, 255, 255, 0.0)  45%,    /* gone by center */
+        rgba(255, 255, 255, 0.0)  60%,    /* dark top */
+        rgba(255, 255, 255, 0.08) 100%    /* faint top-left */
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+  
+/* Inner glow — soft light pooling in the bottom-right inside the glass */
+.liquid-glass::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+        ellipse at 85% 85%,
+        rgba(255, 255, 255, 0.09) 0%,
+        rgba(255, 255, 255, 0.04) 35%,
+        rgba(255, 255, 255, 0.0)  70%
+    );
+    pointer-events: none;
+    z-index: -1;
+}
