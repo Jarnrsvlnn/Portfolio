@@ -1,7 +1,7 @@
 <x-layout>
 
     {{-- ABOUT SECTION --}}
-    <div class="border-2 border-[rgb(120,120,120)] rounded-xl flex flex-col gap-5 px-4 py-5">
+    <div id="about" class="border-2 border-[rgb(120,120,120)] rounded-xl flex flex-col gap-5 px-4 py-5">
         {{-- UPPER CONTAINER --}}
         <div>
             <x-title-text>John Robert Sevillena</x-title-text>
@@ -158,7 +158,7 @@
     </div>
 
     {{-- PROJECTS SECTION --}}
-    <div class="flex flex-col gap-y-3">
+    <div id="projects" class="flex flex-col gap-y-3">
         <x-title-text>Projects</x-title-text>
 
         {{-- CARD CONTAINER --}}
