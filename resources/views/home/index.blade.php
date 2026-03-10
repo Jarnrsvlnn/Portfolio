@@ -162,9 +162,14 @@
         <x-title-text>Projects</x-title-text>
 
         {{-- CARD CONTAINER --}}
-        <div class="grid grid-cols-1 w-full border gap-y-5">
-            <x-project-card style="background-image: url('/images/hmp.png')">
-                <div class="border flex-row mt-auto">
+        <div class="grid grid-cols-1 w-full border gap-y-10">
+            <x-project-card>
+                <!-- Background Image -->
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('/images/hmp.png');">
+                </div>
+
+                {{-- Content --}}
+                <div class="relative border flex-row mt-auto z-10 transition-all duration-500 group-hover:-translate-y-5">
                     <h1 class="font-bold text-[clamp(1.4rem,2vw,1.5rem)] pb-1 text-white">HireMePlz</h1>
 
                     {{-- TECH USED CONTAINER --}}
@@ -189,8 +194,13 @@
                 </div>
             </x-project-card>
 
-            <x-project-card style="background-image: url('/images/financemate.png')">
-                <div class="border flex-row mt-auto">
+            <x-project-card>
+                {{-- Background Image --}}
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('/images/financemate.png')">
+                </div>
+
+                {{-- Content --}}
+                <div class="relative border flex-row mt-auto z-10 transition-all duration-500 group-hover:-translate-y-5">
                     <h1 class="font-bold text-[clamp(1.4rem,2vw,1.5rem)] pb-1 text-white">FinanceMate</h1>
 
                     {{-- TECH USED CONTAINER --}}
@@ -215,8 +225,13 @@
                 </div>
             </x-project-card>
             
-            <x-project-card style="background-image: url('/images/studentms.png')">
-                <div class="border flex-row mt-auto">
+            <x-project-card>
+                <!-- Background Image -->
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('/images/studentms.png');">
+                </div>
+
+                {{-- Content --}}
+                <div class="relative border flex-row mt-auto z-10 transition-all duration-500 group-hover:-translate-y-5">
                     <h1 class="font-bold text-[clamp(1.4rem,2vw,1.5rem)] pb-1 text-white">Student Management System</h1>
 
                     {{-- TECH USED CONTAINER --}}
@@ -245,8 +260,13 @@
                 </div>
             </x-project-card>
 
-            <x-project-card style="background-image: url('/images/omenfall.png')">
-                <div class="border flex-row mt-auto">
+            <x-project-card>
+                <!-- Background Image -->
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('/images/omenfall.png');">
+                </div>
+
+                {{-- Content --}}
+                <div class="relative border flex-row mt-auto z-10 transition-all duration-500 group-hover:-translate-y-5">
                     <h1 class="font-bold text-[clamp(1.4rem,2vw,1.5rem)] pb-1 text-white">Omenfall</h1>
 
                     {{-- TECH USED CONTAINER --}}
