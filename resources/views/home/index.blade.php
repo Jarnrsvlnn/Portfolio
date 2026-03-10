@@ -163,7 +163,7 @@
 
         {{-- CARD CONTAINER --}}
         <div class="grid grid-cols-1 w-full border gap-y-5">
-            <x-project-card>
+            <x-project-card style="background-image: url('/images/hmp.png')">
                 <div class="border flex-row mt-auto">
                     <h1 class="font-bold text-[clamp(1.4rem,2vw,1.5rem)] pb-1 text-white">HireMePlz</h1>
 
@@ -189,7 +189,7 @@
                 </div>
             </x-project-card>
 
-            <x-project-card>
+            <x-project-card style="background-image: url('/images/financemate.png')">
                 <div class="border flex-row mt-auto">
                     <h1 class="font-bold text-[clamp(1.4rem,2vw,1.5rem)] pb-1 text-white">FinanceMate</h1>
 
@@ -215,7 +215,7 @@
                 </div>
             </x-project-card>
             
-            <x-project-card>
+            <x-project-card style="background-image: url('/images/studentms.png')">
                 <div class="border flex-row mt-auto">
                     <h1 class="font-bold text-[clamp(1.4rem,2vw,1.5rem)] pb-1 text-white">Student Management System</h1>
 
@@ -245,7 +245,7 @@
                 </div>
             </x-project-card>
 
-            <x-project-card>
+            <x-project-card style="background-image: url('/images/omenfall.png')">
                 <div class="border flex-row mt-auto">
                     <h1 class="font-bold text-[clamp(1.4rem,2vw,1.5rem)] pb-1 text-white">Omenfall</h1>
 
