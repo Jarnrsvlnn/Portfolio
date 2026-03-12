@@ -1,3 +1,3 @@
-<p class="text-white font-medium text-[clamp(1rem,1vw,1.2rem)] z-10">
+<p class="text-white font-medium text-[clamp(1rem,1vw,1.2rem)] z-10 line-clamp-2">
     {{ $slot }}
 </p>

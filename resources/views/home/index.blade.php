@@ -1,7 +1,7 @@
 <x-layout>
 
     {{-- ABOUT SECTION --}}
-    <div id="about" class="border-2 border-[rgb(120,120,120)] rounded-xl flex flex-col gap-5 px-4 py-5">
+    <div id="about" class="border-2 border-[rgb(120,120,120)] liquid-glass rounded-xl flex flex-col gap-5 px-4 py-5">
         {{-- UPPER CONTAINER --}}
         <div>
             <x-title-text>John Robert Sevillena</x-title-text>
@@ -161,7 +161,7 @@
 
         {{-- CARD CONTAINER --}}
         <div class="grid grid-cols-1 w-full border gap-y-10">
-            <x-project-card>
+            <x-project-section.project-card>
                 <!-- Background Image -->
                 <x-project-section.bg-image image="hmp"></x-project-section.bg-image>
 
@@ -189,9 +189,9 @@
                         A Pokemon TCG game inspired website, but with jobs for the <em>unemployed</em>.
                     </x-project-section.description>
                 </x-project-section.content-container>
-            </x-project-card>
+            </x-project-section.project-card>
 
-            <x-project-card>
+            <x-project-section.project-card>
                 {{-- Background Image --}}
                 <x-project-section.bg-image image="financemate"></x-project-section.bg-image>
 
@@ -219,9 +219,9 @@
                         A <em>pixel-themed</em> website for managing your expenses. 
                     </x-project-section.description>
                 </x-project-section.content-container>
-            </x-project-card>
+            </x-project-section.project-card>
             
-            <x-project-card gradientBottom="from-white/50 via-black/50">
+            <x-project-section.project-card gradientBottom="from-white/50 via-black/50">
                 <!-- Background Image -->
                 <x-project-section.bg-image image="studentms"></x-project-section.bg-image>
 
@@ -250,12 +250,12 @@
                     </div>
 
                     <x-project-section.description>
-                        A simple student management system where teachers can manage personal and academic informations on their students.
+                        A simple management system for managing a student's personal and academic information.
                     </x-project-section.description>
                 </x-project-section.content-container>
-            </x-project-card>
+            </x-project-section.project-card>
 
-            <x-project-card>
+            <x-project-section.project-card>
                 <!-- Background Image -->
                 <x-project-section.bg-image image="omenfall"></x-project-section.bg-image>
 
@@ -280,7 +280,97 @@
                         A short 2D side-scroller RPG game where you can fight <em>"monsters"</em> and progress through the story.
                     </x-project-section.description>
                 </x-project-section.content-container>
-            </x-project-card>
+            </x-project-section.project-card>
+        </div>
+    </div>
+
+    {{-- EDUCATION SECTION --}}
+    <div id="education" class="flex flex-col gap-y-5">
+        <x-title-text>Education</x-title-text>
+
+        {{-- School card container --}}
+        <div class="flex flex-col gap-5">
+            <x-education-section.card>
+
+                {{-- Hover Image --}}
+                <div 
+                    style="background-image: url('/images/cvsubg.jpg')" 
+                    class="absolute inset-0 bg-cover bg-no-repeat bg-center transition-all duration-600 opacity-0 group-hover:opacity-20">
+                </div>
+                
+                {{-- Contents --}}
+                <x-education-section.content-container>
+                    <div class="flex flex-row items-center gap-x-3">
+                        <x-education-section.school-img image="cvsu"></x-education-section.school-img>
+                        <x-education-section.school-name>Cavite State University</x-education-section.school-name>
+                    </div>
+
+                    <div class="">
+                        <x-education-section.school-date>2026 - 2028</x-education-section.school-date>
+                        <x-education-section.school-desc>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum dolor blanditiis sint eveniet perspiciatis. Exercitationem adipisci nihil ullam nesciunt incidunt. Modi nisi consequatur eius, adipisci quibusdam ducimus autem harum nobis?</x-education-section.school-desc>
+                    </div>
+                </x-education-section.content-container>
+            </x-education-section.card>
+            <x-education-section.card>
+                {{-- Hover Image --}}
+                <div 
+                    style="background-image: url('/images/adubg.JPG')" 
+                    class="absolute inset-0 bg-cover bg-no-repeat bg-center transition-all duration-600 opacity-0 group-hover:opacity-20">
+                </div>
+                
+                {{-- Contents --}}
+                <x-education-section.content-container>
+                    <div class="flex flex-row items-center gap-x-3">
+                        <x-education-section.school-img image="adu"></x-education-section.school-img>
+                        <x-education-section.school-name>Adamson University</x-education-section.school-name>
+                    </div>
+
+                    <div class="">
+                        <x-education-section.school-date>2025 - 2026</x-education-section.school-date>
+                        <x-education-section.school-desc>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum dolor blanditiis sint eveniet perspiciatis. Exercitationem adipisci nihil ullam nesciunt incidunt. Modi nisi consequatur eius, adipisci quibusdam ducimus autem harum nobis?</x-education-section.school-desc>
+                    </div>
+                </x-education-section.content-container>
+            </x-education-section.card>
+            <x-education-section.card>
+                {{-- Hover Image --}}
+                <div 
+                    style="background-image: url('/images/gshsbg.jpg')" 
+                    class="absolute inset-0 bg-cover bg-no-repeat bg-center transition-all duration-600 opacity-0 group-hover:opacity-20">
+                </div>
+                
+                {{-- Contents --}}
+                <x-education-section.content-container>
+                    <div class="flex flex-row items-center gap-x-3">
+                        <x-education-section.school-img image="gshs"></x-education-section.school-img>
+                        <x-education-section.school-name>Guinayangan Senior High School</x-education-section.school-name>
+                    </div>
+
+                    <div class="">
+                        <x-education-section.school-date>2023-2025</x-education-section.school-date>
+                        <x-education-section.school-desc>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum dolor blanditiis sint eveniet perspiciatis. Exercitationem adipisci nihil ullam nesciunt incidunt. Modi nisi consequatur eius, adipisci quibusdam ducimus autem harum nobis?</x-education-section.school-desc>
+                    </div>
+                </x-education-section.content-container>
+            </x-education-section.card>
+            <x-education-section.card>
+                {{-- Hover Image --}}
+                <div 
+                    style="background-image: url('/images/gabg.jpg')" 
+                    class="absolute inset-0 bg-cover bg-no-repeat bg-center transition-all duration-600 opacity-0 group-hover:opacity-20">
+                </div>
+                
+                {{-- Contents --}}
+                <x-education-section.content-container>
+                    <div class="flex flex-row items-center gap-x-3">
+                        <x-education-section.school-img image="ga"></x-education-section.school-img>
+                        <x-education-section.school-name>Guinayangan Academy</x-education-section.school-name>
+                    </div>
+
+                    <div class="">
+                        <x-education-section.school-date>2019 - 2023</x-education-section.school-date>
+                        <x-education-section.school-desc>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum dolor blanditiis sint eveniet perspiciatis. Exercitationem adipisci nihil ullam nesciunt incidunt. Modi nisi consequatur eius, adipisci quibusdam ducimus autem harum nobis?</x-education-section.school-desc>
+                    </div>
+                </x-education-section.content-container>
+            </x-education-section.card>
         </div>
     </div>
 </x-layout>
