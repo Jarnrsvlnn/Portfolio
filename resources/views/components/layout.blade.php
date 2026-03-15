@@ -46,7 +46,17 @@
             <main class="flex flex-col justify-center sm:px-40 w-full min-w-80 gap-y-20">
                 {{ $slot }}
             </main>  
+
+            <footer class="absolute mt-15 sm:mt-10 bg-[rgb(20,20,20)] text-[clamp(0.9rem,1vw,1rem)] liquid-glass w-full left-0 text-center p-1 md:p-1">
+                <p class="text-white">
+                    @ 2026 John Robert Sevillena.<br class="sm:hidden">
+                     Built with Laravel & Tailwind
+                </p>
+            </footer>
+            
         </div>
+
+
 
     </body>
 </html> 
