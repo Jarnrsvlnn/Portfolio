@@ -378,10 +378,12 @@
     <div id="contact" class="flex flex-col gap-y-5 text-center">
         <x-title-text>Contact Me</x-title-text>
         
-        <div class="flex flex-col gap-2">
-            <input class="liquid-glass text-white p-3" name="email" type="email" placeholder="Enter your email">
-            <textarea class="liquid-glass text-white p-3 h-40 max-h-40 min-h-40" placeholder="Write your message..."></textarea>
-        </div>
+        <form class="flex flex-col gap-5" action="{{ route('contact.input') }}" method="POST">
+            @csrf
+            <input class="liquid-glass text-white p-3" name="email" type="email" placeholder="Enter your email" required>
+            <textarea class="liquid-glass text-white p-3 h-40 max-h-40 min-h-40" name="message" placeholder="Write your message..." required></textarea>
+            <button class="cursor-pointer bg-[rgb(40,40,40)] rounded-md h-10 w-50 text-white mx-auto font-semibold" type="submit">Send Email</button>
+        </form>
 
         <x-title-text class="pt-15 sm:pt-20 text-white text-[clamp(1.5rem,2vw,2rem)] font-bold">Socials</x-title-text>
 
