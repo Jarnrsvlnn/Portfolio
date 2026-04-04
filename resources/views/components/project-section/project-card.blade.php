@@ -1,6 +1,6 @@
 @props(['gradientBottom' => 'from-white/30 via-white/10'])
 
-<div {{ $attributes->merge(['class' => 'group relative w-full h-65 md:h-100 rounded-xl p-4 flex flex-col relative overflow-hidden']) }}>
+<div {{ $attributes->merge(['class' => 'group relative w-full h-65 md:h-100 lg:h-70 rounded-xl p-4 flex flex-col relative overflow-hidden']) }}>
     <!-- Black fade overlay on top/sides -->
     <div class="z-10 absolute inset-0 bg-linear-to-b from-black/70 via-transparent to-transparent pointer-events-none"></div>
     <!-- Black fade left -->
