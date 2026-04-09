@@ -1,11 +1,14 @@
-@props(['bonito' => 'social'])
+@props([
+    'bonito' => 'social',
+    'link'
+    ])
 
 @if ($bonito == 'social')
-    <div class="flex flex-row gap-2 items-center p-1 w-full cursor-pointer">
+    <a href="{{ $link }}" target="_blank" rel="noopener noreferrer" class="flex flex-col space-y-0.5 justify-center w-full cursor-pointer transition-all duration-50 ease-out hover:border-3 hover:border-green-400 rounded-sm">
         {{ $slot }}
-    </div>
+    </a>
 @else
-    <div class="flex flex-row gap-2 items-center p-1 w-full cursor-pointer">
+    <div id="open-dialog" class="flex flex-col space-y-0.5 justify-center w-full cursor-pointer p-1 transition-all duration-50 ease-out hover:border-3 hover:border-green-400 rounded-sm">
         {{ $slot }}
     </div>
 @endif

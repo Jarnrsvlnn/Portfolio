@@ -1,6 +1,6 @@
 <x-layout>
     {{-- ABOUT SECTION --}}
-    <div id="about" class="border-2 border-[rgb(120,120,120)] liquid-panel rounded-xl flex flex-col gap-5 px-4 py-5 
+    <div id="about" class="border-2 border-[rgb(255,255,255,0.15)] liquid-panel rounded-xl flex flex-col gap-5 px-4 py-5 
     transition-all duration-800 ease-in-out opacity-0 animate-on-scroll translate-y-0 starting:-translate-y-10">
         {{-- UPPER CONTAINER --}}
         <div class="flex flex-row items-start justify-between">
@@ -133,9 +133,9 @@
         {{-- Main Content --}}
         <div class="grid grid-cols-1 space-x-2 gap-2 md:grid-cols-2 transition-all duration-800 ease-in-out opacity-0 animate-on-scroll translate-x-0 starting:translate-x-10">
             {{-- TECH STACK --}}
-            <div class="flex flex-col gap-y-4 liquid-panel rounded-sm p-4 w-full">
+            <div class="flex flex-col gap-y-4 liquid-panel border-[rgb(255,255,255,0.15)] rounded-sm p-4 w-full">
                 {{-- Title --}}
-                <h1 class="text-white font-bold text-[1.2rem]">Tech Stack</h1>
+                <h1 class="text-white font-bold text-[1.2rem] cursor-default">Tech Stack</h1>
                 
                 {{-- Stacks --}}
                 <div class="space-y-2">
@@ -179,8 +179,8 @@
             </div>
 
             {{-- SKILLS --}}
-            <div class="flex flex-col liquid-panel rounded-sm p-5 w-full h-full space-y-3">
-                <h1 class="text-white font-bold text-[1.2rem]">Skills</h1>
+            <div class="flex flex-col liquid-panel border-[rgb(255,255,255,0.15)] rounded-sm p-5 w-full h-full space-y-3">
+                <h1 class="text-white font-bold text-[1.2rem] cursor-default">Skills</h1>
                 <x-tech-section.tech-container spacing="gap-x-1">
                     <x-tech-section.skill-container>Web Development</x-tech-section.skill-container>
                     <x-tech-section.skill-container>UI Designing</x-tech-section.skill-container>
@@ -377,13 +377,13 @@
         {{-- MAIN CONTENT --}}
         <div class="flex flex-col gap-2 sm:flex-row">
             {{-- ACHIEVEMENTS --}}
-            <div class="liquid-panel flex flex-col p-4 space-y-5 w-full overflow-hidden">
+            <div class="liquid-panel border-[rgb(255,255,255,0.15)] flex flex-col p-4 space-y-5 w-full overflow-hidden">
                 <h1 class="text-white font-bold text-[1.2rem]">Certifications & Achievements</h1>
                 <img src="" alt="">
             </div>
 
             {{-- TIMELINE --}}
-            <div class="liquid-panel flex flex-col p-4 space-y-5 w-full overflow-hidden">
+            <div class="liquid-panel border-[rgb(255,255,255,0.15)] flex flex-col p-4 space-y-5 w-full overflow-hidden">
                 <x-education-section.parent-section>
                     {{-- HOVER IMAGE --}}
                     <x-education-section.preview-img image="cvsubg.jpg">
@@ -578,57 +578,78 @@
     <div id="contact" class="flex flex-col gap-y-1">
         <x-title-text class="transition-all duration-800 ease-in-out opacity-0 animate-on-scroll translate-x-0 starting:translate-x-10">Get in touch</x-title-text>
         
-        <div class="liquid-panel flex flex-col sm:flex-row justify-between p-4 space-y-2">
+        <div class="liquid-panel border-[rgb(255,255,255,0.15)] flex flex-row justify-between p-2.5 md:p-4 space-y-2">
             {{-- SOCIAL LINKS SECTION --}}
             <div class="w-full space-y-3">
                 <h1 class="text-white font-semibold cursor-default">Social Links</h1>
 
                 {{-- CLICKABLES --}}
-                <div class="flex flex-col gap-1">
-                    <x-contact-section.bonito-flakes bonito="social">
-                        {{-- MAIN CONTENT --}}
-                        <svg class="size-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z" fill="#ffffff"></path> </g></svg>
-                        <h1 class="text-white text-[0.9rem]">LinkedIn</h1>
+                <div class="flex flex-col gap-2">
+                    <x-contact-section.bonito-flakes link="https://www.linkedin.com/in/john-robert-sevillena-2777642b2/" bonito="social">
+                        <div class="flex flex-row gap-1 items-center">
+                            <svg class="size-4.5 md:size-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z" fill="#ffffff"></path> </g></svg>
+                            <h1 class="text-white text-[0.75rem] md:text-[0.9rem] font-medium">LinkedIn</h1>
+                        </div>
+
+                        <p class="text-green-400 text-[0.8rem]">John Robert Sevillena</p>
                     </x-contact-section.bonito-flakes>
-                    <x-contact-section.bonito-flakes bonito="social">
-                        <svg class="size-5" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg>
-                        <h1 class="text-white text-[0.9rem]">Github</h1>
+                    <x-contact-section.bonito-flakes link="https://github.com/Jarnrsvlnn" bonito="social">
+                        <div class="flex flex-row gap-1 items-center">
+                            <svg class="relative size-3.5 md:size-5" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg>
+                            <h1 class="text-white text-[0.75rem] md:text-[0.9rem] font-medium relative left-1">Github</h1>
+                        </div>
+                        
+                        <p class="text-green-400 text-[0.8rem]">Jarnrsvlnn</p>
                     </x-contact-section.bonito-flakes>
-                    <x-contact-section.bonito-flakes bonito="social">
-                        <svg class="size-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z" fill="#ffffff"></path> </g></svg>
-                        <h1 class="text-white text-[0.9rem]">Facebook</h1>
+                    <x-contact-section.bonito-flakes link="https://web.facebook.com/bltz.ev.5/" bonito="social">
+                        <div class="flex flex-row gap-1 items-center">
+                            <svg class="relative size-5.5 md:size-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z" fill="#ffffff"></path> </g></svg>
+                            <h1 class="text-white text-[0.75rem] md:text-[0.9rem] font-medium">Facebook</h1>
+                        </div>
+
+                        <p class="text-green-400 text-[0.8rem]">John Robert Sevillena</p>
                     </x-contact-section.bonito-flakes>
-                    <x-contact-section.bonito-flakes bonito="social">
-                        <svg class="size-5" fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>tiktok</title> <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"></path> </g></svg>
-                        <h1 class="text-white text-[0.9rem]">Tiktok</h1>
+                    <x-contact-section.bonito-flakes link="https://www.tiktok.com/en/" bonito="social">
+                        <div class="flex flex-row gap-1 items-center">
+                            <svg class="size-3.5 md:size-5" fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>tiktok</title> <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"></path> </g></svg>
+                            <h1 class="text-white text-[0.75rem] md:text-[0.9rem] font-medium">Tiktok</h1>
+                        </div>
+
+                        <p class="text-green-400 text-[0.8rem]">John Dev</p>
                     </x-contact-section.bonito-flakes>
                 </div>  
             </div>
 
             {{-- MESSAGE ME SECTION --}}
             <div class="w-full space-y-3">
-                <h1 class="text-white font-semibold cursor-default">Talk with me</h1>
+                <h1 class="text-white font-semibold cursor-default">Connect with me</h1>
 
                 {{-- CLICKABLES --}}
                 <div class="flex flex-col gap-1">
-                    <x-contact-section.bonito-flakes bonito="message">
-                        <svg class="size-5" viewBox="0 -2.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>email [#1572]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -922.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z" id="email-[#1572]"> </path> </g> </g> </g> </g></svg>
-                        <h1 class="text-white text-[0.9rem]">Email</h1>
+                    <x-contact-section.bonito-flakes bonito="message" id="open-dialog">
+                        <div class="flex flex-row gap-2">
+                            <svg class="relative size-3.5 md:size-4" viewBox="0 -2.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>email [#1572]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -922.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z" id="email-[#1572]"> </path> </g> </g> </g> </g></svg>
+                            <h1 class="relative text-white text-[0.75rem] md:text-[0.9rem]">Email</h1>
+                        </div>
+
+                        <p class="text-green-400 text-[0.8rem]">sevillenaeduc@gmail.com</p>
                     </x-contact-section.bonito-flakes>
-                    <x-contact-section.bonito-flakes bonito="message">
-                        <svg class="size-5" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css">  .st0{fill:#ffffff;}  </style> <g> <path class="st0" d="M421.073,221.719c-0.578,11.719-9.469,26.188-23.797,40.094v183.25c-0.016,4.719-1.875,8.719-5.016,11.844 c-3.156,3.063-7.25,4.875-12.063,4.906H81.558c-4.781-0.031-8.891-1.844-12.047-4.906c-3.141-3.125-4.984-7.125-5-11.844V152.219 c0.016-4.703,1.859-8.719,5-11.844c3.156-3.063,7.266-4.875,12.047-4.906h158.609c12.828-16.844,27.781-34.094,44.719-49.906 c0.078-0.094,0.141-0.188,0.219-0.281H81.558c-18.75-0.016-35.984,7.531-48.25,19.594c-12.328,12.063-20.016,28.938-20,47.344 v292.844c-0.016,18.406,7.672,35.313,20,47.344C45.573,504.469,62.808,512,81.558,512h298.641c18.781,0,36.016-7.531,48.281-19.594 c12.297-12.031,20-28.938,19.984-47.344V203.469c0,0-0.125-0.156-0.328-0.313C440.37,209.813,431.323,216.156,421.073,221.719z"></path> <path class="st0" d="M498.058,0c0,0-15.688,23.438-118.156,58.109C275.417,93.469,211.104,237.313,211.104,237.313 c-15.484,29.469-76.688,151.906-76.688,151.906c-16.859,31.625,14.031,50.313,32.156,17.656 c34.734-62.688,57.156-119.969,109.969-121.594c77.047-2.375,129.734-69.656,113.156-66.531c-21.813,9.5-69.906,0.719-41.578-3.656 c68-5.453,109.906-56.563,96.25-60.031c-24.109,9.281-46.594,0.469-51-2.188C513.386,138.281,498.058,0,498.058,0z"></path> </g> </g></svg>
-                        <h1 class="text-white text-[0.9rem]">Blog</h1>
+
+                    <x-contact-section.bonito-flakes bonito="message" id="open-dialog">
+                        <div class="flex flex-row gap-2">
+                            <svg class="relative size-3.5 md:size-5" fill="#ffffff" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 18.1562 37.7617 C 24.9297 44.5352 33.1797 49.7617 39.9062 49.7617 C 42.9297 49.7617 45.5781 48.7070 47.7109 46.3633 C 48.9528 44.9805 49.7266 43.3633 49.7266 41.7695 C 49.7266 40.5977 49.2812 39.4727 48.1562 38.6758 L 40.9843 33.5664 C 39.8828 32.8164 38.9687 32.4414 38.1250 32.4414 C 37.0468 32.4414 36.1093 33.0508 35.0312 34.1055 L 33.3671 35.7461 C 33.1093 36.0039 32.7812 36.1211 32.4765 36.1211 C 32.1015 36.1211 31.7734 35.9805 31.5156 35.8633 C 30.0859 35.0898 27.6015 32.9571 25.2812 30.6602 C 22.9843 28.3633 20.8515 25.8789 20.1015 24.4258 C 19.9609 24.1680 19.8437 23.8398 19.8437 23.4883 C 19.8437 23.1836 19.9375 22.8789 20.1953 22.6211 L 21.8359 20.9102 C 22.8906 19.8320 23.4999 18.8945 23.4999 17.8164 C 23.4999 16.9727 23.1250 16.0586 22.3515 14.9571 L 17.3124 7.8555 C 16.4921 6.7305 15.3437 6.2383 14.0781 6.2383 C 12.5312 6.2383 10.9140 6.9414 9.5546 8.2774 C 7.2812 10.4571 6.2734 13.1524 6.2734 16.1289 C 6.2734 22.8555 11.4062 31.0117 18.1562 37.7617 Z"></path></g></svg>
+                            <h1 class="relative text-white text-[0.75rem] right-1 md:text-[0.9rem]">Phone</h1>
+                        </div>
+                        
+                        <p class="text-green-400 text-[0.8rem]">+63 947 797 4164</p>
                     </x-contact-section.bonito-flakes>
                 </div>
             </div>
         </div>
 
-        <form class="flex flex-col gap-5 transition-all duration-800 ease-in-out opacity-0 animate-on-scroll translate-x-0 starting:translate-x-10" action="{{ route('contact.input') }}" method="POST">
-            @csrf
-            <input class="liquid-glass text-white p-3" name="email" type="email" placeholder="Enter your email" required>
-            <textarea class="liquid-glass text-white p-3 h-40 max-h-40 min-h-40" name="message" placeholder="Write your message..." required></textarea>
-            <button class="liquid-panel cursor-pointer bg-[rgb(40,40,40)] rounded-md h-10 w-50 text-white mx-auto font-semibold" type="submit">Send Email</button>
-        </form>
-
     </div>
+
+    {{-- EMAIL DIALOG --}}
+    <x-contact-section.mail-dialog></x-contact-section.mail-dialog>
+
 </x-layout>
